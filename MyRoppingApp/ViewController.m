@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CollectionViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,12 @@
 @end
 
 @implementation ViewController
+
+- (IBAction)unwindToLoginPage:(UIStoryboardSegue *)segue {
+    _userNameTextField.text = nil;
+    _passwordTextField.text = nil;
+    
+}
 
 - (IBAction)authenticateLogin:(UIButton *)sender {
     

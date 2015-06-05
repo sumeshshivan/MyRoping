@@ -14,6 +14,7 @@
 		8DC895E01B2172B900D995A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC895DF1B2172B900D995A1 /* Images.xcassets */; };
 		8DC895E31B2172B900D995A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC895E11B2172B900D995A1 /* LaunchScreen.xib */; };
 		8DC895EF1B2172BA00D995A1 /* MyRoppingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895EE1B2172BA00D995A1 /* MyRoppingAppTests.m */; };
+		8DC895FE1B219C3A00D995A1 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895FD1B219C3A00D995A1 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8DC895E81B2172BA00D995A1 /* MyRoppingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRoppingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC895ED1B2172BA00D995A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC895EE1B2172BA00D995A1 /* MyRoppingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRoppingAppTests.m; sourceTree = "<group>"; };
+		8DC895FC1B219C3A00D995A1 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		8DC895FD1B219C3A00D995A1 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				8DC895D91B2172B900D995A1 /* ViewController.h */,
 				8DC895DA1B2172B900D995A1 /* ViewController.m */,
 				8DC895DC1B2172B900D995A1 /* Main.storyboard */,
+				8DC895FC1B219C3A00D995A1 /* CollectionViewController.h */,
+				8DC895FD1B219C3A00D995A1 /* CollectionViewController.m */,
 				8DC895DF1B2172B900D995A1 /* Images.xcassets */,
 				8DC895E11B2172B900D995A1 /* LaunchScreen.xib */,
 				8DC895D21B2172B900D995A1 /* Supporting Files */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC895FE1B219C3A00D995A1 /* CollectionViewController.m in Sources */,
 				8DC895DB1B2172B900D995A1 /* ViewController.m in Sources */,
 				8DC895D81B2172B900D995A1 /* AppDelegate.m in Sources */,
 				8DC895D51B2172B900D995A1 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				8DC895F41B2172BA00D995A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DC895F51B2172BA00D995A1 /* Build configuration list for PBXNativeTarget "MyRoppingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				8DC895F71B2172BA00D995A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
