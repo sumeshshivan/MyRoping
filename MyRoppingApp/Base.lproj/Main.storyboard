@@ -58,6 +58,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="authenticateLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbL-3C-yh2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -82,7 +85,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="r0t-MP-5tx" kind="show" identifier="LoginSegue" id="OLK-bT-V8H"/>
+                        <outlet property="passwordTextField" destination="L43-4w-mx1" id="Dc7-GN-LJN"/>
+                        <outlet property="userNameTextField" destination="f3k-Iu-DMP" id="byj-ME-oCQ"/>
+                        <segue destination="r0t-MP-5tx" kind="presentation" identifier="LoginSegue" modalTransitionStyle="crossDissolve" animates="NO" id="OLK-bT-V8H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,6 +100,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0WV-QZ-FTG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BUv-mh-GJF">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>

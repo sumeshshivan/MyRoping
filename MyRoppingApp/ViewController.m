@@ -9,10 +9,22 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @end
 
 @implementation ViewController
+
+- (IBAction)authenticateLogin:(UIButton *)sender {
+    
+    NSString *userName = _userNameTextField.text;
+    NSString *password = _passwordTextField.text;
+    
+    if ([userName isEqualToString:@"admin"] && [password isEqualToString:@"qburst"]) {
+        [self performSegueWithIdentifier:@"LoginSegue" sender:sender];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
