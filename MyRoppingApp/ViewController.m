@@ -9,9 +9,13 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+
+@property (weak, nonatomic) IBOutlet UILabel *incorrectCredentialsLabel;
+
 @end
 
 @implementation ViewController
@@ -23,6 +27,8 @@
     
     if ([userName isEqualToString:@"admin"] && [password isEqualToString:@"qburst"]) {
         [self performSegueWithIdentifier:@"LoginSegue" sender:sender];
+    } else {
+        _incorrectCredentialsLabel.hidden = NO;
     }
 }
 

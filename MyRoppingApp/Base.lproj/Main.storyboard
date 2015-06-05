@@ -26,33 +26,13 @@
                                     <navigationItem title="Login" id="lUr-4m-hHd"/>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-Iu-DMP">
-                                <rect key="frame" x="200" y="213" width="200" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-Iu-DMP">
+                                <rect key="frame" x="200" y="218" width="200" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-qh-Xrp">
-                                <rect key="frame" x="200" y="184" width="200" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L43-4w-mx1">
-                                <rect key="frame" x="200" y="280" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Fss-Oc-Ocz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wn-0g-OCd">
-                                <rect key="frame" x="200" y="251" width="200" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqs-8u-fdM">
-                                <rect key="frame" x="200" y="328" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqs-8u-fdM">
+                                <rect key="frame" x="200" y="335" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <state key="normal" title="Log In">
@@ -62,6 +42,32 @@
                                     <action selector="authenticateLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbL-3C-yh2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-qh-Xrp">
+                                <rect key="frame" x="200" y="189" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L43-4w-mx1">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Fss-Oc-Ocz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wn-0g-OCd">
+                                <rect key="frame" x="200" y="256" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Credentials" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP8-aP-kRX">
+                                <rect key="frame" x="200" y="394" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -71,9 +77,12 @@
                             <constraint firstItem="L43-4w-mx1" firstAttribute="centerX" secondItem="tqs-8u-fdM" secondAttribute="centerX" id="FhJ-LU-QdF"/>
                             <constraint firstItem="L43-4w-mx1" firstAttribute="top" secondItem="3wn-0g-OCd" secondAttribute="bottom" constant="8" id="JiS-6i-VNU"/>
                             <constraint firstAttribute="centerX" secondItem="L43-4w-mx1" secondAttribute="centerX" id="JoW-u6-O2D"/>
+                            <constraint firstItem="L43-4w-mx1" firstAttribute="width" secondItem="BP8-aP-kRX" secondAttribute="width" id="K05-q9-Rvg"/>
                             <constraint firstItem="L43-4w-mx1" firstAttribute="width" secondItem="d7U-qh-Xrp" secondAttribute="width" id="Ka8-3X-vST"/>
+                            <constraint firstItem="L43-4w-mx1" firstAttribute="centerX" secondItem="BP8-aP-kRX" secondAttribute="centerX" constant="-0.5" id="KmY-N5-715"/>
                             <constraint firstItem="L43-4w-mx1" firstAttribute="width" secondItem="tqs-8u-fdM" secondAttribute="width" id="RQL-EL-MfZ"/>
                             <constraint firstItem="L43-4w-mx1" firstAttribute="width" secondItem="f3k-Iu-DMP" secondAttribute="width" id="dhb-PF-D2B"/>
+                            <constraint firstItem="d7U-qh-Xrp" firstAttribute="top" secondItem="BP8-aP-kRX" secondAttribute="bottom" constant="-226" id="dmj-eQ-ggw"/>
                             <constraint firstItem="L43-4w-mx1" firstAttribute="top" secondItem="f3k-Iu-DMP" secondAttribute="bottom" constant="37" id="eip-Nb-gya"/>
                             <constraint firstItem="Xid-1Y-bbr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fp1-aO-O4E"/>
                             <constraint firstItem="L43-4w-mx1" firstAttribute="centerX" secondItem="f3k-Iu-DMP" secondAttribute="centerX" id="geb-F3-v0G"/>
@@ -85,6 +94,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="incorrectCredentialsLabel" destination="BP8-aP-kRX" id="nwZ-Yo-xZR"/>
                         <outlet property="passwordTextField" destination="L43-4w-mx1" id="Dc7-GN-LJN"/>
                         <outlet property="userNameTextField" destination="f3k-Iu-DMP" id="byj-ME-oCQ"/>
                         <segue destination="r0t-MP-5tx" kind="presentation" identifier="LoginSegue" modalTransitionStyle="crossDissolve" animates="NO" id="OLK-bT-V8H"/>
