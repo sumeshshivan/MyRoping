@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 qburst. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
 #import "CollectionViewController.h"
 
-@interface ViewController ()
+@interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 - (IBAction)unwindToLoginPage:(UIStoryboardSegue *)segue {
     _userNameTextField.text = nil;

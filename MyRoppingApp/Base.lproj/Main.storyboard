@@ -7,7 +7,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -114,19 +114,24 @@
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-Vq-YfR">
+                                            <rect key="frame" x="5" y="8" width="130" height="100"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-hK-zAv">
-                                            <rect key="frame" x="8" y="17" width="134" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="7" y="111" width="127" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-Vq-YfR">
-                                            <rect key="frame" x="-5" y="0.0" width="150" height="150"/>
-                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <size key="customSize" width="140" height="140"/>
+                                <connections>
+                                    <segue destination="W7k-wt-T5e" kind="show" id="Sqe-qJ-Tlu"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -135,7 +140,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="MyRopping" id="Lmx-V1-dBa">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" style="plain" id="JUi-yc-RXf">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="JUi-yc-RXf">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="zMM-Es-GW9" kind="unwind" unwindAction="unwindToLoginPage:" id="NtG-wz-XII"/>
@@ -148,6 +153,24 @@
             </objects>
             <point key="canvasLocation" x="2504" y="289"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="zt4-84-IEM">
+            <objects>
+                <viewController id="W7k-wt-T5e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6b2-X6-1LL"/>
+                        <viewControllerLayoutGuide type="bottom" id="1qu-Nt-bjI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wkt-MI-hk6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3B-IZ-tDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3179" y="289"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="P1c-YR-90l">
             <objects>
@@ -156,6 +179,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Mk-W7-QxU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.88252981090000004" green="0.51215563320000002" blue="0.20391209660000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

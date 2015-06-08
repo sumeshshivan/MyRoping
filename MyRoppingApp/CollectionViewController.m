@@ -7,6 +7,7 @@
 //
 
 #import "CollectionViewController.h"
+#import "MyRoppingItem.h"
 
 @interface CollectionViewController () {
     
@@ -29,7 +30,37 @@ static NSString * const reuseIdentifier = @"Cell";
 //    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
-    gridItems = [NSArray arrayWithObjects:@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg", @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg", @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg", @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg", @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg", @"white_chocolate_donut.jpg", nil];
+    
+    // Creating all the roppingItems
+    MyRoppingItem *item1 = [MyRoppingItem new];
+    item1.itemName = @"Angry Birds Cake";
+    item1.imageFile = @"angry_birds_cake.jpg";
+    
+    MyRoppingItem *item2 = [MyRoppingItem new];
+    item2.itemName = @"Creme Brelee";
+    item2.imageFile = @"creme_brelee.jpg";
+    
+    MyRoppingItem *item3 = [MyRoppingItem new];
+    item3.itemName = @"Egg Benedict";
+    item3.imageFile = @"egg_benedict.jpg";
+    
+    MyRoppingItem *item4 = [MyRoppingItem new];
+    item4.itemName = @"Full Breakfast";
+    item4.imageFile = @"full_breakfast.jpg";
+    
+    MyRoppingItem *item5 = [MyRoppingItem new];
+    item5.itemName = @"Green Tea";
+    item5.imageFile = @"green_tea.jpg";
+
+    MyRoppingItem *item6 = [MyRoppingItem new];
+    item6.itemName = @"Ham and Cheese Panini";
+    item6.imageFile = @"ham_and_cheese_panini.jpg";
+
+    // Adding the items to gridItems Array
+    gridItems = [NSArray arrayWithObjects:item1, item2, item3, item4, item5, item6, nil];
+    
+    
+//    gridItems = [NSArray arrayWithObjects:@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg", @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg", @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg", @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg", @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg", @"white_chocolate_donut.jpg", nil];
     
 }
 
@@ -65,12 +96,26 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    UIImageView *gridItemsView = (UIImageView *)[cell viewWithTag:100];
-    gridItemsView.image = [UIImage imageNamed:[gridItems objectAtIndex:indexPath.row]];
+    MyRoppingItem *item = [gridItems objectAtIndex:indexPath.row];
     
+    // Create a Image View from Image View with tag 100 in the prototype cell
+    UIImageView *gridItemsView = (UIImageView *)[cell viewWithTag:100];
+    
+    // Add image to the Image View from the item's imageFile
+    gridItemsView.image = [UIImage imageNamed:item.imageFile];
+    
+    
+//    gridItemsView.image = [UIImage imageNamed:[gridItems objectAtIndex:indexPath.row]];
+    
+    // Create a Label from Label with tag 1 in the prototype cell
     UILabel *gridLabel = (UILabel *)[cell viewWithTag:1];
+    
+    // Add Label text from the items's itemName
+    gridLabel.text = item.itemName;
+    
+    
 //        NSInteger index = indexPath.row;
-    gridLabel.text = [gridItems objectAtIndex:indexPath.row];
+//    gridLabel.text = [gridItems objectAtIndex:indexPath.row];
 
     return cell;
 }
