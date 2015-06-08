@@ -130,7 +130,7 @@
                                 <gestureRecognizers/>
                                 <size key="customSize" width="140" height="140"/>
                                 <connections>
-                                    <segue destination="W7k-wt-T5e" kind="show" id="Sqe-qJ-Tlu"/>
+                                    <segue destination="W7k-wt-T5e" kind="show" identifier="showItemDetail" id="Sqe-qJ-Tlu"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="2504" y="289"/>
         </scene>
-        <!--View Controller-->
+        <!--My Ropping Detail View Controller-->
         <scene sceneID="zt4-84-IEM">
             <objects>
-                <viewController id="W7k-wt-T5e" sceneMemberID="viewController">
+                <viewController id="W7k-wt-T5e" customClass="MyRoppingDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6b2-X6-1LL"/>
                         <viewControllerLayoutGuide type="bottom" id="1qu-Nt-bjI"/>
@@ -164,12 +164,39 @@
                     <view key="view" contentMode="scaleToFill" id="wkt-MI-hk6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7N-QN-T7V">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8Ji-hf-eh6"/>
+                                    <constraint firstAttribute="height" constant="200" id="nnn-nC-pjX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-dK-ZHr">
+                                <rect key="frame" x="200" y="376" width="200" height="24"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="X7N-QN-T7V" secondAttribute="centerX" id="ElZ-on-DSO"/>
+                            <constraint firstItem="sgG-dK-ZHr" firstAttribute="bottom" secondItem="X7N-QN-T7V" secondAttribute="bottom" id="iq1-Ps-PmB"/>
+                            <constraint firstAttribute="centerY" secondItem="X7N-QN-T7V" secondAttribute="centerY" id="lim-lP-FEh"/>
+                            <constraint firstItem="sgG-dK-ZHr" firstAttribute="width" secondItem="X7N-QN-T7V" secondAttribute="width" id="nS5-Ux-Q94"/>
+                            <constraint firstItem="sgG-dK-ZHr" firstAttribute="centerX" secondItem="X7N-QN-T7V" secondAttribute="centerX" id="qml-dB-Ods"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myRoppingImage" destination="X7N-QN-T7V" id="R8k-7T-FY4"/>
+                        <outlet property="myRoppingLabel" destination="sgG-dK-ZHr" id="K5P-zr-n5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3B-IZ-tDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3179" y="289"/>
+            <point key="canvasLocation" x="3175" y="289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P1c-YR-90l">

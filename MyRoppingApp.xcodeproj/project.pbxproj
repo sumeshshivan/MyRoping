@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D40C8081B2594D00079908B /* MyRoppingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D40C8071B2594D00079908B /* MyRoppingDetailViewController.m */; };
+		8D40C80A1B2595FD0079908B /* icon220x220.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D40C8091B2595FD0079908B /* icon220x220.png */; };
 		8DC895D51B2172B900D995A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895D41B2172B900D995A1 /* main.m */; };
 		8DC895D81B2172B900D995A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895D71B2172B900D995A1 /* AppDelegate.m */; };
 		8DC895DB1B2172B900D995A1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895DA1B2172B900D995A1 /* LoginViewController.m */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D40C8061B2594D00079908B /* MyRoppingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRoppingDetailViewController.h; sourceTree = "<group>"; };
+		8D40C8071B2594D00079908B /* MyRoppingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRoppingDetailViewController.m; sourceTree = "<group>"; };
+		8D40C8091B2595FD0079908B /* icon220x220.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon220x220.png; sourceTree = "<group>"; };
 		8DC895CF1B2172B900D995A1 /* MyRoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC895D31B2172B900D995A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC895D41B2172B900D995A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +98,8 @@
 				8DC895DA1B2172B900D995A1 /* LoginViewController.m */,
 				8DC895DC1B2172B900D995A1 /* Main.storyboard */,
 				8DC895FC1B219C3A00D995A1 /* CollectionViewController.h */,
+				8D40C8061B2594D00079908B /* MyRoppingDetailViewController.h */,
+				8D40C8071B2594D00079908B /* MyRoppingDetailViewController.m */,
 				8DC895FD1B219C3A00D995A1 /* CollectionViewController.m */,
 				8DD480121B2570CE00006823 /* MyRoppingItem.h */,
 				8DD480131B2570CE00006823 /* MyRoppingItem.m */,
@@ -106,6 +113,7 @@
 		8DC895D21B2172B900D995A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D40C8091B2595FD0079908B /* icon220x220.png */,
 				8DC895D31B2172B900D995A1 /* Info.plist */,
 				8DC895D41B2172B900D995A1 /* main.m */,
 			);
@@ -212,6 +220,7 @@
 				8DC895DE1B2172B900D995A1 /* Main.storyboard in Resources */,
 				8DC895E31B2172B900D995A1 /* LaunchScreen.xib in Resources */,
 				8DC895E01B2172B900D995A1 /* Images.xcassets in Resources */,
+				8D40C80A1B2595FD0079908B /* icon220x220.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +243,7 @@
 				8DC895DB1B2172B900D995A1 /* LoginViewController.m in Sources */,
 				8DC895D81B2172B900D995A1 /* AppDelegate.m in Sources */,
 				8DC895D51B2172B900D995A1 /* main.m in Sources */,
+				8D40C8081B2594D00079908B /* MyRoppingDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
