@@ -8,7 +8,6 @@
 
 #import "CollectionViewController.h"
 #import "MyRoppingItem.h"
-#import "MyRoppingDetailViewController.h"
 
 @interface CollectionViewController () {
     
@@ -77,12 +76,12 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    if ([segue.identifier isEqualToString:@"showItemDetail"]) {
-        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
-        MyRoppingDetailViewController *destViewController = segue.destinationViewController;
-        destViewController.myRoppingItem = [gridItems objectAtIndex:indexPath.row];
-    }
+//    
+//    if ([segue.identifier isEqualToString:@"showItemDetail"]) {
+//        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
+//        MyRoppingDetailViewController *destViewController = segue.destinationViewController;
+//        destViewController.myRoppingItem = [gridItems objectAtIndex:indexPath.row];
+//    }
     
 }
 
