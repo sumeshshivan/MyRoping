@@ -10,7 +10,9 @@
 
 @interface MyRoppingItem : NSObject
 
-@property (nonatomic, strong) NSString *itemName;
+@property NSInteger itemType;
+@property (nonatomic, strong) NSString *itemLabel;
 @property (nonatomic, strong) NSString *imageFile;
+@property (nonatomic, strong) NSDictionary *itemDetails;
 
 @end

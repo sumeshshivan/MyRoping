@@ -17,6 +17,12 @@
 		8DC895EF1B2172BA00D995A1 /* MyRoppingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895EE1B2172BA00D995A1 /* MyRoppingAppTests.m */; };
 		8DC895FE1B219C3A00D995A1 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC895FD1B219C3A00D995A1 /* CollectionViewController.m */; };
 		8DD480141B2570CE00006823 /* MyRoppingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD480131B2570CE00006823 /* MyRoppingItem.m */; };
+		8DF13DFD1B28346F0005AB68 /* roadmaps.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF13DFC1B28346F0005AB68 /* roadmaps.png */; };
+		8DF13DFF1B2834B10005AB68 /* icon220x22.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF13DFE1B2834B10005AB68 /* icon220x22.png */; };
+		8DF13E041B2861120005AB68 /* Ropping1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DF13E001B2861120005AB68 /* Ropping1.jpg */; };
+		8DF13E051B2861120005AB68 /* Ropping2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DF13E011B2861120005AB68 /* Ropping2.jpg */; };
+		8DF13E061B2861120005AB68 /* Ropping3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF13E021B2861120005AB68 /* Ropping3.png */; };
+		8DF13E071B2861120005AB68 /* Horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DF13E031B2861120005AB68 /* Horse.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		8DC895FD1B219C3A00D995A1 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		8DD480121B2570CE00006823 /* MyRoppingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRoppingItem.h; sourceTree = "<group>"; };
 		8DD480131B2570CE00006823 /* MyRoppingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRoppingItem.m; sourceTree = "<group>"; };
+		8DF13DFC1B28346F0005AB68 /* roadmaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roadmaps.png; sourceTree = "<group>"; };
+		8DF13DFE1B2834B10005AB68 /* icon220x22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon220x22.png; sourceTree = "<group>"; };
+		8DF13E001B2861120005AB68 /* Ropping1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ropping1.jpg; sourceTree = "<group>"; };
+		8DF13E011B2861120005AB68 /* Ropping2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ropping2.jpg; sourceTree = "<group>"; };
+		8DF13E021B2861120005AB68 /* Ropping3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ropping3.png; sourceTree = "<group>"; };
+		8DF13E031B2861120005AB68 /* Horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Horse.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,12 @@
 		8DC895D21B2172B900D995A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DF13E001B2861120005AB68 /* Ropping1.jpg */,
+				8DF13E011B2861120005AB68 /* Ropping2.jpg */,
+				8DF13E021B2861120005AB68 /* Ropping3.png */,
+				8DF13E031B2861120005AB68 /* Horse.jpg */,
+				8DF13DFE1B2834B10005AB68 /* icon220x22.png */,
+				8DF13DFC1B28346F0005AB68 /* roadmaps.png */,
 				8D40C8091B2595FD0079908B /* icon220x220.png */,
 				8DC895D31B2172B900D995A1 /* Info.plist */,
 				8DC895D41B2172B900D995A1 /* main.m */,
@@ -215,7 +233,13 @@
 				8DC895DE1B2172B900D995A1 /* Main.storyboard in Resources */,
 				8DC895E31B2172B900D995A1 /* LaunchScreen.xib in Resources */,
 				8DC895E01B2172B900D995A1 /* Images.xcassets in Resources */,
+				8DF13E041B2861120005AB68 /* Ropping1.jpg in Resources */,
+				8DF13DFD1B28346F0005AB68 /* roadmaps.png in Resources */,
+				8DF13DFF1B2834B10005AB68 /* icon220x22.png in Resources */,
 				8D40C80A1B2595FD0079908B /* icon220x220.png in Resources */,
+				8DF13E061B2861120005AB68 /* Ropping3.png in Resources */,
+				8DF13E071B2861120005AB68 /* Horse.jpg in Resources */,
+				8DF13E051B2861120005AB68 /* Ropping2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

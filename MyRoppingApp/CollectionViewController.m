@@ -18,7 +18,9 @@
 
 @implementation CollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier1 = @"CellType1";
+static NSString * const reuseIdentifier2 = @"CellType2";
+static NSString * const reuseIdentifier3 = @"CellType3";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,28 +35,30 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Creating all the roppingItems
     MyRoppingItem *item1 = [MyRoppingItem new];
-    item1.itemName = @"Angry Birds Cake";
-    item1.imageFile = @"angry_birds_cake.jpg";
+    item1.itemType = 1;
+    item1.itemLabel = @"My Profile";
+    item1.imageFile = @"Ropping1.jpg";
     
     MyRoppingItem *item2 = [MyRoppingItem new];
-    item2.itemName = @"Creme Brelee";
-    item2.imageFile = @"creme_brelee.jpg";
+    item2.itemType = 2;
+    item2.itemLabel = @"Ropping2";
     
     MyRoppingItem *item3 = [MyRoppingItem new];
-    item3.itemName = @"Egg Benedict";
-    item3.imageFile = @"egg_benedict.jpg";
+    item3.itemType = 3;
+    item3.imageFile = @"roadmaps.png";
     
     MyRoppingItem *item4 = [MyRoppingItem new];
-    item4.itemName = @"Full Breakfast";
-    item4.imageFile = @"full_breakfast.jpg";
+    item4.itemType = 1;
+    item4.itemLabel = @"Ham and Cheese Panini";
+    item4.imageFile = @"Ropping3.png";
     
     MyRoppingItem *item5 = [MyRoppingItem new];
-    item5.itemName = @"Green Tea";
-    item5.imageFile = @"green_tea.jpg";
-
+    item5.itemType = 3;
+    item5.imageFile = @"Horse.jpg";
+    
     MyRoppingItem *item6 = [MyRoppingItem new];
-    item6.itemName = @"Ham and Cheese Panini";
-    item6.imageFile = @"ham_and_cheese_panini.jpg";
+    item6.itemType = 3;
+    item6.imageFile = @"icon220x220.png";
 
     // Adding the items to gridItems Array
     gridItems = [NSArray arrayWithObjects:item1, item2, item3, item4, item5, item6, nil];
@@ -100,30 +104,50 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    UICollectionViewCell *cell;
+    UIImageView *gridItemsView;
+    UILabel *gridLabel;
+    
     MyRoppingItem *item = [gridItems objectAtIndex:indexPath.row];
     
-    // Create a Image View from Image View with tag 100 in the prototype cell
-    UIImageView *gridItemsView = (UIImageView *)[cell viewWithTag:100];
+    // Create different cells from prototype based on the item type
+    switch (item.itemType) {
+        case 1:
+            // Cell Type 1  : Image and Label
+            cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier1 forIndexPath:indexPath];
+            gridItemsView = (UIImageView *)[cell viewWithTag:100];
+            gridItemsView.image = [UIImage imageNamed:item.imageFile];
+            gridLabel = (UILabel *)[cell viewWithTag:1];
+            gridLabel.text = item.itemLabel;
+            break;
+            
+        case 2:
+            // Cell Type 2 : Title Label and detail Label
+            cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier2 forIndexPath:indexPath];
+            gridLabel = (UILabel *)[cell viewWithTag:1];
+            gridLabel.text = item.itemLabel;
+            break;
+        case 3:
+            // Cell Type 2 : Image only
+            cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier3 forIndexPath:indexPath];
+            gridItemsView = (UIImageView *)[cell viewWithTag:100];
+            gridItemsView.image = [UIImage imageNamed:item.imageFile];
+            break;
+        default:
+            break;
+    }
     
-    // Add image to the Image View from the item's imageFile
-    gridItemsView.image = [UIImage imageNamed:item.imageFile];
+    // Adding shadow to cells
+    cell.layer.masksToBounds = NO;
+    cell.layer.contentsScale = [UIScreen mainScreen].scale;
+    cell.layer.shadowOpacity = 0.2f;
+    cell.layer.shadowRadius = 3.0f;
+//    cell.layer.shadowOffset = CGSizeZero;
+    cell.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
+    cell.layer.shouldRasterize = YES;
     
     
-//    gridItemsView.image = [UIImage imageNamed:[gridItems objectAtIndex:indexPath.row]];
-    
-    // Create a Label from Label with tag 1 in the prototype cell
-    UILabel *gridLabel = (UILabel *)[cell viewWithTag:1];
-    
-    // Add Label text from the items's itemName
-    gridLabel.text = item.itemName;
-    
-    
-//        NSInteger index = indexPath.row;
-//    gridLabel.text = [gridItems objectAtIndex:indexPath.row];
-
     return cell;
 }
 
