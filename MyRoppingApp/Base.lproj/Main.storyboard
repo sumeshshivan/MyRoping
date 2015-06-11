@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="1144" y="-479"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit-->
         <scene sceneID="INv-Bo-99b">
             <objects>
                 <viewController id="yop-kU-1nx" sceneMemberID="viewController">
@@ -104,23 +104,17 @@
                     <view key="view" contentMode="scaleToFill" id="X4J-47-lhZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon220x22.png" translatesAutoresizingMaskIntoConstraints="NO" id="SzU-Iu-Jb0">
-                                <rect key="frame" x="-25" y="10" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="fey-bj-9s5"/>
+                    <tabBarItem key="tabBarItem" title="Edit" image="Edit-32.png" id="fey-bj-9s5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oL5-nT-5Dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4035" y="-568"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="nZu-2b-MVg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-LX-QGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="76T-Ba-ayb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7kR-4b-NlL"/>
@@ -129,19 +123,15 @@
                     <view key="view" contentMode="scaleToFill" id="f6d-wM-H8g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon220x220.png" translatesAutoresizingMaskIntoConstraints="NO" id="ReT-UG-z17">
-                                <rect key="frame" x="-9" y="180" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="LbU-qE-15C"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Gender Neutral User-32.png" id="LbU-qE-15C"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-LX-QGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4035" y="-1248"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos-->
         <scene sceneID="WNT-95-Rj4">
             <objects>
                 <viewController id="o3Y-mD-zAg" sceneMemberID="viewController">
@@ -152,18 +142,13 @@
                     <view key="view" contentMode="scaleToFill" id="eUu-Wn-gsg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="roadmaps.png" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-NM-a3c">
-                                <rect key="frame" x="0.0" y="-14" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="md1-aO-Trb"/>
+                    <tabBarItem key="tabBarItem" title="Photos" image="Screenshot Filled-32.png" id="md1-aO-Trb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmq-yw-9Co" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4035" y="106"/>
+            <point key="canvasLocation" x="4035" y="98"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YjQ-kh-dQs">
@@ -212,17 +197,14 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6G-EI-IWz">
                                             <rect key="frame" x="8" y="14" width="124" height="38"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <color key="shadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="8cL-0E-PHJ" kind="show" id="QSP-3e-LH8"/>
-                                </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellType2" id="Y1C-oy-CrA">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -233,14 +215,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNH-qq-FNA">
                                             <rect key="frame" x="8" y="17" width="124" height="28"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellType3" id="jPx-wm-XYk">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -270,6 +252,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="8cL-0E-PHJ" kind="show" identifier="Cell1Segue" id="RyE-4C-NT9"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ss7-lV-SP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zMM-Es-GW9" userLabel="Exit" sceneMemberID="exit"/>
@@ -323,8 +308,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon220x22.png" width="220" height="220"/>
-        <image name="icon220x220.png" width="220" height="220"/>
-        <image name="roadmaps.png" width="412" height="412"/>
+        <image name="Edit-32.png" width="32" height="32"/>
+        <image name="Gender Neutral User-32.png" width="32" height="32"/>
+        <image name="Screenshot Filled-32.png" width="32" height="32"/>
     </resources>
 </document>
