@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r0t-MP-5tx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login-->
@@ -123,13 +124,89 @@
                     <view key="view" contentMode="scaleToFill" id="f6d-wM-H8g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ropping1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-P4-Eup">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GaW-1a-rsA"/>
+                                    <constraint firstAttribute="width" constant="200" id="cP8-kG-7GF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dee Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-jp-4Rk">
+                                <rect key="frame" x="209" y="137" width="182" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.47542861939999997" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account : Premium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eta-Nm-Sou">
+                                <rect key="frame" x="227" y="437" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47542861939999997" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age : 48" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bH-Pu-bt7">
+                                <rect key="frame" x="268" y="408" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47542861939999997" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0bH-Pu-bt7" firstAttribute="top" secondItem="4v5-P4-Eup" secondAttribute="bottom" constant="8" id="31T-yo-g49">
+                                <variation key="heightClass=compact" constant="-138"/>
+                            </constraint>
+                            <constraint firstItem="4v5-P4-Eup" firstAttribute="leading" secondItem="f6d-wM-H8g" secondAttribute="leadingMargin" priority="900" constant="26" id="Ao9-gT-P0q">
+                                <variation key="heightClass=compact" constant="51"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="eta-Nm-Sou" secondAttribute="centerX" id="B7G-QX-4DN">
+                                <variation key="heightClass=compact" constant="-73.5"/>
+                            </constraint>
+                            <constraint firstItem="0bH-Pu-bt7" firstAttribute="top" secondItem="M4M-jp-4Rk" secondAttribute="bottom" priority="900" constant="14" id="CAZ-xO-h5q"/>
+                            <constraint firstItem="M4M-jp-4Rk" firstAttribute="top" secondItem="4v5-P4-Eup" secondAttribute="top" priority="900" id="UbK-XW-qTd"/>
+                            <constraint firstAttribute="centerX" secondItem="M4M-jp-4Rk" secondAttribute="centerX" id="Wtr-aq-p4T">
+                                <variation key="heightClass=compact" constant="-91"/>
+                            </constraint>
+                            <constraint firstItem="0bH-Pu-bt7" firstAttribute="leading" secondItem="4v5-P4-Eup" secondAttribute="trailing" priority="900" constant="33" id="bvL-6A-FQ9"/>
+                            <constraint firstItem="eta-Nm-Sou" firstAttribute="leading" secondItem="4v5-P4-Eup" secondAttribute="trailing" priority="900" constant="33" id="cgw-7o-YCv"/>
+                            <constraint firstAttribute="centerY" secondItem="4v5-P4-Eup" secondAttribute="centerY" id="faW-Bh-OPc"/>
+                            <constraint firstAttribute="centerX" secondItem="0bH-Pu-bt7" secondAttribute="centerX" id="ggs-YU-rrk">
+                                <variation key="heightClass=compact" constant="-32"/>
+                            </constraint>
+                            <constraint firstItem="eta-Nm-Sou" firstAttribute="top" secondItem="0bH-Pu-bt7" secondAttribute="bottom" constant="8" id="lph-Ls-sMA">
+                                <variation key="heightClass=compact" constant="14"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="4v5-P4-Eup" secondAttribute="centerX" id="oMU-pe-f25">
+                                <variation key="heightClass=compact" constant="133"/>
+                            </constraint>
+                            <constraint firstItem="4v5-P4-Eup" firstAttribute="top" secondItem="M4M-jp-4Rk" secondAttribute="bottom" constant="15" id="xbv-6G-LDt">
+                                <variation key="heightClass=compact" constant="-48"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ao9-gT-P0q"/>
+                                <exclude reference="UbK-XW-qTd"/>
+                                <exclude reference="CAZ-xO-h5q"/>
+                                <exclude reference="bvL-6A-FQ9"/>
+                                <exclude reference="cgw-7o-YCv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Ao9-gT-P0q"/>
+                                <include reference="UbK-XW-qTd"/>
+                                <include reference="CAZ-xO-h5q"/>
+                                <include reference="bvL-6A-FQ9"/>
+                                <include reference="cgw-7o-YCv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Gender Neutral User-32.png" id="LbU-qE-15C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-LX-QGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4035" y="-1248"/>
+            <point key="canvasLocation" x="4018" y="-1274"/>
         </scene>
         <!--Photos-->
         <scene sceneID="WNT-95-Rj4">
@@ -310,6 +387,7 @@
     <resources>
         <image name="Edit-32.png" width="32" height="32"/>
         <image name="Gender Neutral User-32.png" width="32" height="32"/>
+        <image name="Ropping1.jpg" width="300" height="300"/>
         <image name="Screenshot Filled-32.png" width="32" height="32"/>
     </resources>
 </document>
