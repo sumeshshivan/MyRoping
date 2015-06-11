@@ -153,10 +153,19 @@ static NSString * const reuseIdentifier3 = @"CellType3";
 
 #pragma mark <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.item == 0) {
-        [self performSegueWithIdentifier:@"Cell1Segue" sender:self];
-
+    switch (indexPath.item) {
+        case 0:
+            [self performSegueWithIdentifier:@"Cell1Segue" sender:self];
+            break;
+        case 1:
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"MapViewSegue" sender:self];
+            break;
+        default:
+            break;
     }
+    
 }
 /*
 // Uncomment this method to specify if the specified item should be highlighted during tracking
