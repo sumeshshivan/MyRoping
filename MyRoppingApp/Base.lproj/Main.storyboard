@@ -128,16 +128,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ropping1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-P4-Eup">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="GaW-1a-rsA"/>
-                                    <constraint firstAttribute="width" constant="200" id="cP8-kG-7GF"/>
+                                    <constraint firstAttribute="height" constant="200" id="GaW-1a-rsA">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="362"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="cP8-kG-7GF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="417"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dee Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-jp-4Rk">
-                                <rect key="frame" x="209" y="137" width="182" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.47542861939999997" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account : Premium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eta-Nm-Sou">
                                 <rect key="frame" x="227" y="437" width="147" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -150,11 +148,18 @@
                                 <color key="textColor" red="0.0" green="0.47542861939999997" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dee Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-jp-4Rk">
+                                <rect key="frame" x="209" y="137" width="182" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.47542861939999997" blue="0.68053582700000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0bH-Pu-bt7" firstAttribute="top" secondItem="4v5-P4-Eup" secondAttribute="bottom" constant="8" id="31T-yo-g49">
                                 <variation key="heightClass=compact" constant="-138"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="29"/>
                             </constraint>
                             <constraint firstItem="4v5-P4-Eup" firstAttribute="leading" secondItem="f6d-wM-H8g" secondAttribute="leadingMargin" priority="900" constant="26" id="Ao9-gT-P0q">
                                 <variation key="heightClass=compact" constant="51"/>
@@ -169,7 +174,9 @@
                             </constraint>
                             <constraint firstItem="0bH-Pu-bt7" firstAttribute="leading" secondItem="4v5-P4-Eup" secondAttribute="trailing" priority="900" constant="33" id="bvL-6A-FQ9"/>
                             <constraint firstItem="eta-Nm-Sou" firstAttribute="leading" secondItem="4v5-P4-Eup" secondAttribute="trailing" priority="900" constant="33" id="cgw-7o-YCv"/>
-                            <constraint firstAttribute="centerY" secondItem="4v5-P4-Eup" secondAttribute="centerY" id="faW-Bh-OPc"/>
+                            <constraint firstAttribute="centerY" secondItem="4v5-P4-Eup" secondAttribute="centerY" id="faW-Bh-OPc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="21"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="0bH-Pu-bt7" secondAttribute="centerX" id="ggs-YU-rrk">
                                 <variation key="heightClass=compact" constant="-32"/>
                             </constraint>
@@ -181,6 +188,7 @@
                             </constraint>
                             <constraint firstItem="4v5-P4-Eup" firstAttribute="top" secondItem="M4M-jp-4Rk" secondAttribute="bottom" constant="15" id="xbv-6G-LDt">
                                 <variation key="heightClass=compact" constant="-48"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="31"/>
                             </constraint>
                         </constraints>
                         <variation key="default">
@@ -206,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgS-LX-QGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4018" y="-1274"/>
+            <point key="canvasLocation" x="4035" y="-1275"/>
         </scene>
         <!--Photos-->
         <scene sceneID="WNT-95-Rj4">
