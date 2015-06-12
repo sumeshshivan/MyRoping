@@ -49,4 +49,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSString *userName = _userNameTextField.text;
+    NSString *password = _passwordTextField.text;
+    
+    if ([userName isEqualToString:@"admin"] && [password isEqualToString:@"qburst"]) {
+        [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+    } else {
+        _incorrectCredentialsLabel.hidden = NO;
+    }
+    return YES;
+}
+
 @end
